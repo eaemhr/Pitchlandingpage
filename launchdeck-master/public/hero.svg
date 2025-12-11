@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="900" height="420" role="img" aria-label="Hero illustration: rocket approaching moon">
+  <defs>
+    <linearGradient id="flame" x1="0" x2="1">
+      <stop offset="0" stop-color="#ffdd7a"/>
+      <stop offset="1" stop-color="#ff7a5c"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" x2="1">
+      <stop offset="0" stop-color="#cfe8ff"/>
+      <stop offset="1" stop-color="#b6d7ff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background soft rectangle -->
+  <rect x="0" y="0" width="100%" height="100%" fill="transparent"/>
+
+  <!-- moon on right -->
+  <g transform="translate(700,120) scale(1.2)">
+    <circle cx="0" cy="0" r="70" fill="#f6f7fb"/>
+    <circle cx="-18" cy="-10" r="10" fill="#e2e8fb" opacity="0.6"/>
+    <path d="M-60 10 q30 -30 70 -12 q-6 20 -28 26 q-36 8 -42 -14z" fill="#eaf0ff" opacity="0.06"/>
+  </g>
+
+  <!-- orbit ring -->
+  <ellipse cx="560" cy="180" rx="420" ry="90" fill="none" stroke="#9fb7d9" stroke-opacity="0.15" stroke-width="6"/>
+
+  <!-- rocket -->
+  <g transform="translate(180,260) rotate(-18)">
+    <!-- flame -->
+    <path d="M0 70 C 10 90, 40 92, 60 70 C 50 100, 10 110, 0 70 Z" fill="url(#flame)"/>
+    <!-- body -->
+    <g transform="translate(10,0)">
+      <rect x="0" y="-80" width="28" height="120" rx="14" fill="url(#body)"/>
+      <path d="M14 -80 L34 -42 L-6 -42 Z" fill="#cfe8ff"/>
+      <circle cx="14" cy="-30" r="10" fill="#081426" opacity="0.88"/>
+      <rect x="-6" y="24" width="20" height="8" rx="4" fill="#e9f2ff" opacity="0.9"/>
+    </g>
+    <!-- fins -->
+    <path d="M-6 30 L-40 48 L-6 48 Z" fill="#d0e4ff"/>
+    <path d="M32 30 L66 48 L32 48 Z" fill="#d0e4ff"/>
+  </g>
+
+  <!-- subtle stars -->
+  <g fill="#ffffff" opacity="0.9">
+    <circle cx="140" cy="40" r="1.2"/>
+    <circle cx="260" cy="20" r="1.6"/>
+    <circle cx="380" cy="60" r="1.1"/>
+    <circle cx="580" cy="30" r="1.4"/>
+  </g>
+</svg>
